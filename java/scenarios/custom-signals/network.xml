@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE network SYSTEM "http://www.matsim.org/files/dtd/network_v1.dtd">
+
+<network name="equil test network">
+   <nodes>
+   		<node id="1" x="0" y="0"/>
+   		<node id="2" x="0" y="100"/>
+   		<node id="3" x="0" y="200"/>
+   		<node id="4" x="400" y="1000"/>
+		<node id="5" x="500" y="1000"/>
+		<node id="6" x="600" y="1000"/>
+		<node id="7" x="1000" y="200"/>
+		<node id="8" x="1000" y="100"/>
+		<node id="9" x="1000" y="0"/>
+		<node id="10" x="350" y="0"/>
+		<node id="11" x="350" y="100"/>
+		<node id="12" x="350" y="200"/>
+		<node id="13" x="400" y="250"/>
+		<node id="14" x="500" y="250"/>
+		<node id="15" x="600" y="250"/>
+		<node id="16" x="650" y="200"/>
+		<node id="17" x="650" y="100"/>
+		<node id="18" x="650" y="0"/>
+
+		<!--auxiliary points-->
+	   <node id="19" x="1" y="0"/> <!--1-->
+	   <node id="20" x="1" y="100"/> <!--2-->
+	   <node id="21" x="400" y="999"/> <!--4-->
+	   <node id="22" x="500" y="999"/> <!--5-->
+	   <node id="23" x="999" y="200"/> <!--7-->
+	   <node id="24" x="999" y="100"/> <!--8-->
+   </nodes>
+   <links capperiod="01:00:00"> <!-- TODO: speed, length, capacity, reorder-->
+   		 <link id="1" from="1" to="19" length="1.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="2" from="10" to="18" length="300.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="3" from="18" to="9" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="4" from="5" to="22" length="1.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="5" from="14" to="18" length="450.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="6" from="2" to="20" length="1.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="7" from="11" to="15" length="400.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="8" from="15" to="6" length="100.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="9" from="7" to="23" length="1.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="10" from="16" to="15" length="100.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="11" from="15" to="6" length="750.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="12" from="4" to="21" length="1.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="13" from="13" to="12" length="100.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="14" from="12" to="3" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="15" from="8" to="24" length="1.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   		 <link id="16" from="17" to="12" length="400.00" capacity="1000" freespeed="30.00" permlanes="1" />
+		<!--auxiliary links-->
+	   <link id="17" from="19" to="10" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+	   <link id="18" from="20" to="11" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+	   <link id="19" from="21" to="13" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+	   <link id="20" from="22" to="14" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+	   <link id="21" from="23" to="16" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+	   <link id="22" from="24" to="17" length="350.00" capacity="1000" freespeed="30.00" permlanes="1" />
+   </links>
+</network>

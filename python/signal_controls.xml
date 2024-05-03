@@ -1,0 +1,33 @@
+<ns0:signalControl xmlns:ns0="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/signalControl_v2.0.xsd">
+	<ns0:signalSystem refId="1">
+		<ns0:signalSystemController>
+			<ns0:controllerIdentifier>DefaultPlanbasedSignalSystemController</ns0:controllerIdentifier>
+			<ns0:signalPlan id="1">
+				<ns0:start daytime="17:50:00" />
+				<ns0:cycleTime sec="90" />
+				<ns0:offset sec="0" />
+				<ns0:signalGroupSettings refId="4">
+					<ns0:onset sec="1" />
+					<ns0:dropping sec="5" />
+				</ns0:signalGroupSettings>
+				<ns0:signalGroupSettings refId="5">
+					<ns0:onset sec="2" />
+					<ns0:dropping sec="6" />
+				</ns0:signalGroupSettings>
+			</ns0:signalPlan>
+            <ns0:signalPlan id="2">
+				<ns0:start daytime="17:50:00" />
+				<ns0:cycleTime sec="90" />
+				<ns0:offset sec="0" />
+				<ns0:signalGroupSettings refId="4">
+					<ns0:onset sec="3" />
+					<ns0:dropping sec="7" />
+				</ns0:signalGroupSettings>
+				<ns0:signalGroupSettings refId="5">
+					<ns0:onset sec="4" />
+					<ns0:dropping sec="8" />
+				</ns0:signalGroupSettings>
+			</ns0:signalPlan>
+		</ns0:signalSystemController>
+	</ns0:signalSystem>
+</ns0:signalControl>

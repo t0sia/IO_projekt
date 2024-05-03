@@ -1,0 +1,19 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+java/target/*
+java/output/*
+java/test/output/*
+java/bin/*
+
+output/*
+
+# IntelliJ
+*.idea/
+*.iml
+python/__pycache__/*
