@@ -1,4 +1,4 @@
-def get_output(file='C:/Users/ranyjulek/Desktop/uni/inteligencja-obliczeniowa/matsim-example-project/output/scorestats.txt'):
+def get_output(file='/Users/antoninakus/Desktop/io/IO_projekt/output/scorestats.txt'):
     with open(file, 'r') as f:
         lines = [line for line in f.readlines()]
         score = lines[-1].split('\t')[1]

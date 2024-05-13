@@ -29,7 +29,7 @@ cel: modyfikacja onsetu i droppingu
 minimum: jeden system, kilka grup + constrainty
 '''
 
-BASE_DIR = 'C:/Users/ranyjulek/Desktop/uni/inteligencja-obliczeniowa/IO_projekt/'
+BASE_DIR = '/Users/antoninakus/Desktop/io/IO_projekt/'
 SIGNALS = 'custom-scenario/signal_control.xml'
 OUTPUT = 'output/equil/equilTestRun/scorestats.txt'
 MATSIM = 'java'
